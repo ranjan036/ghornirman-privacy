@@ -22,7 +22,7 @@
 <body>
 
 <h1>Privacy Policy for GhorNirman</h1>
-<p class="updated">Effective date: 2026-10-21 (previous version: 2026-10-19)</p>
+<p class="updated">Effective date: 2026-10-22 (previous version: 2026-10-21)</p>
 
 <p>
 GhorNirman ("the app", "we", "us") is a marketplace app that helps buyers
@@ -34,8 +34,9 @@ This policy explains what information the app collects and how it is used.
 <h2>Information we collect</h2>
 
 <p><strong>Phone number.</strong> Buyers can use the app without signing
-in. When a seller or mistri signs up or logs in, we collect their phone
-number and verify it using a one-time password (OTP) sent by SMS. This
+in. When a seller or mistri signs up or logs in — or when a buyer chooses
+to give a rating (see "Ratings" below) — we collect their phone number and
+verify it using a one-time password (OTP) sent by SMS. This
 verification is handled by Firebase Authentication, a service provided by
 Google. We use your phone number to:</p>
 <ul>
@@ -48,7 +49,10 @@ Google. We use your phone number to:</p>
   (see "Bookings" below), so the app does not show a mistri's or
   labourer's phone number to buyers,</li>
   <li>send you notifications about your own account, such as when your
-  seller or mistri listing is approved.</li>
+  seller or mistri listing is approved,</li>
+  <li>for buyers who rate: make sure each person gives only one rating
+  per shop or mistri. A buyer's phone number is never shown to shops,
+  mistris or other buyers.</li>
 </ul>
 
 <p><strong>District selection.</strong> Sellers and mistris choose the
@@ -155,6 +159,29 @@ app; the shop an order was sent to can also see how many order requests
 it received (the count only). The message language you choose, and the districts you
 last searched in, are saved only on your phone.</p>
 
+<p><strong>Furniture orders.</strong> Furniture in the app is sold by
+GhorNirman, which picks each item up from a partner shop and delivers it
+to you. When you use "Place order" on a furniture item, the WhatsApp
+message is addressed to GhorNirman's number instead of the shop, and
+names the partner shop the item comes from. If you send it, the
+GhorNirman team receives the message and your WhatsApp number, and uses
+them to confirm the order, arrange pickup from the partner shop and
+deliver it to you; we share with the partner shop only what it needs to
+prepare the item (the item and quantity), not your phone number. The app
+saves the same order request record described above.</p>
+
+<p><strong>Ratings.</strong> If you rate a shop, wholesaler or mistri, you
+first verify your phone number once (see "Phone number" above). The app
+then saves your rating: your account, which shop or mistri you rated, the
+number of stars (1-5) and the time. You can change your rating later. The
+app does not collect written reviews. Ratings are shown to buyers only as
+an average and a count (for example "4.3 (12 ratings)"), and only once a
+shop or mistri has at least 3 ratings; who gave which rating is never
+shown to shops, mistris or other buyers, and is seen only by the
+GhorNirman team. The app also remembers, on your phone only, which shops
+and mistris you contacted or booked, so it can offer you the "Rate"
+button for them.</p>
+
 <p><strong>Calls and WhatsApp messages to shops.</strong> When you tap
 a shop's Call or WhatsApp button, the app saves a small record: which
 shop, whether it was a call or WhatsApp, which screen it came from, and
@@ -196,8 +223,9 @@ businesses. It is seen only by the GhorNirman team.</p>
 
 <p>We use the information above only to operate and improve the core
 functions of the app: letting buyers find and compare sellers/mistris,
-showing how far they are, letting buyers contact sellers directly, and
-arranging mistri and labour bookings. We do
+showing how far they are, letting buyers contact sellers directly,
+arranging mistri and labour bookings, delivering furniture orders, and
+showing ratings. We do
 not sell your information to third parties, and we do not use it for
 advertising.</p>
 
@@ -212,11 +240,14 @@ profile photo and approximate location are shown to buyers once approved;
 your phone number is used by the GhorNirman team to arrange bookings and
 is not shown to buyers in the app. If you register as a
 wholesaler, your business details and wholesale prices are visible only
-to approved shops on GhorNirman, not to the public. Buyers do not sign in,
-so the app does not collect or show any buyer's name or phone number; if
-a buyer sends a booking on WhatsApp, only the GhorNirman team (and the
-mistri or labourer assigned to the job) sees the details needed to
-arrange it.
+to approved shops on GhorNirman, not to the public. Buyers browse
+without signing in, and the app never shows a buyer's name or phone
+number to anyone. A buyer who signs in to rate is identified only to the
+GhorNirman team; shops, mistris and other buyers see only the average
+rating and count. If a buyer sends a booking or a furniture order on
+WhatsApp, only the GhorNirman team (and the mistri, labourer or partner
+shop involved, as far as needed) sees the details needed to arrange
+it.
 Usage analytics are seen only by the GhorNirman team, in aggregate.
 A shop can see only the number of calls, WhatsApp messages, order
 requests and views it received through the app, never who they came
@@ -227,8 +258,9 @@ GhorNirman team and are never shown to buyers.</p>
 <h2>Data storage</h2>
 
 <p>App data is stored using Firebase (Firestore and Firebase Storage),
-which are Google Cloud services. Seller and mistri data is retained for as
-long as the account is active. Analytics data is handled by Google
+which are Google Cloud services. Seller and mistri data, and a buyer's
+phone sign-in and ratings, are retained for as long as the account is
+active. Analytics data is handled by Google
 Analytics for Firebase and deleted automatically as described above.</p>
 
 <h2>Your choices</h2>
